@@ -1,0 +1,25 @@
+﻿version: 1
+
+models:
+  main:
+    provider: google
+    model: gemini-3.6-flash
+
+model: main
+
+sandbox:
+  persist: true
+  build:
+    dockerfile: sandbox/Dockerfile
+
+memory:
+  dir: memory
+
+agents:
+  - name: default
+    description: The entry point.
+    memory: true
+    skills: {}
+    tools:
+      - files:*
+      - sandbox:*
