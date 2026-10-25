@@ -23,4 +23,4 @@ RUN npm install -g @anthropic-ai/sdk @google/genai @openrouter/sdk openai
 
 # Pinned to the `zen` that wrote this file, so the tools in the container are
 # the ones the session outside it was built by. Bump both together.
-RUN npm install -g @zenera/cli@1.1.35 @zenera/rag@1.1.35
+RUN npm install -g @zenera/cli@1.1.31 @zenera/rag@1.1.31
