@@ -15,7 +15,7 @@ something in it — and report what was done in enough detail to be checked.
 
 ## Models
 
-- `google:gemini-3.6-flash` — one model for the whole project, used by every agent.
+- `gemini-3.1-flash-lite` — one model for the whole project, used by every agent.
 - Named once in `agents.yaml` so it can be swapped in one place. Nothing here
   depends on which model it is; a project that later needs a cheaper model for
   one job adds a second alias rather than scattering the choice.
